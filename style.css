@@ -74,7 +74,7 @@ i:hover {
 .hd-1 {
   display: flex;
   max-height: 65px;
-  padding: 0 10%;
+  padding: 7px 10%;
   justify-content: space-between;
   align-content: center;
 }
@@ -163,6 +163,7 @@ i:hover {
   display: flex;
   justify-content: space-between;
   color: var(--dark);
+  margin: 20px 0px;
 }
 
 .bar-left span {
