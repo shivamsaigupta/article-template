@@ -1,13 +1,14 @@
 :root {
   --primary: #ddd;
-  --light: #333;
+  --light: rgb(0, 0, 0, 0.54);
+  --dark: rgb(0, 0, 0, 0.84);
   --lightgreen: #008396;
   --shadow: rgba(70, 70, 70, 0.363);
 }
 
 * {
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 body {
@@ -15,14 +16,45 @@ body {
 
 /* var(--primary) */
 
-main {
-  margin: 0 10%;
-}
-
 header {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: var(--shadow);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article {
+  max-width: 680px;
+}
+
+.title {
+  font-size: 2.75rem;
+  max-width: 80%;
+  color: var(--dark);
+  margin: 18px 0px;
+}
+.subtitle {
+  font-size: 1.36rem;
+  max-width: 80%;
+  color: var(--dark);
+  margin: 8px 0px;
+}
+
+.author {
+  color: var(--dark);
+  margin: 8px 0px;
+  font-weight: bold;
+}
+
+.date {
+  color: var(--light);
+  margin: 2px 0px;
+  font-size: 0.68rem;
 }
 
 .hd-1 {
@@ -46,7 +78,7 @@ header {
 }
 
 .hd-2 li {
-  color: rgb(0, 0, 0, 0.54);
+  color: var(--light);
   padding: 0px 8px;
 }
 
@@ -67,4 +99,47 @@ header {
   border-radius: 3px;
   padding: 12px 30px 12px 30px;
   margin: 4px 8px;
+}
+
+.btn-sm {
+  border: 2px solid var(--lightgreen);
+  display: inline;
+  font-size: 1rem;
+  background-color: white;
+  color: var(--lightgreen);
+  border-radius: 3px;
+  padding: 6px 15 6px 15;
+  margin: 2px 4px;
+}
+
+.article-top-bar {
+  display: flex;
+}
+
+.bar-left span {
+  display: flex;
+  min-width: 500px;
+}
+
+.article-text {
+  color: var(--dark);
+  font-size: 1.6rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 8px 0px;
+}
+
+.article-img img {
+  max-width: 100%;
+  max-height: 550px;
+}
+
+.img-caption {
+  color: var(--light);
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+.inarticle-subtitle {
+  font-size: 2.75rem;
+  font-weight: bold;
 }
