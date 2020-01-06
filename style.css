@@ -3,6 +3,7 @@
   --light: rgb(0, 0, 0, 0.54);
   --dark: rgb(0, 0, 0, 0.84);
   --lightgreen: #008396;
+  --darkgreen: #036979;
   --shadow: rgba(70, 70, 70, 0.363);
 }
 
@@ -78,6 +79,10 @@ i:hover {
   border-color: rgb(0, 0, 0, 0.226);
 }
 
+.social-icons {
+  color: var(--dark);
+}
+
 .hd-2 {
   display: flex;
   max-height: 55px;
@@ -132,7 +137,8 @@ i:hover {
 
 .article-text {
   color: var(--dark);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 10px;
   margin-bottom: 24px;
@@ -155,4 +161,35 @@ i:hover {
 .inarticle-subtitle {
   font-size: 2.75rem;
   font-weight: bold;
+  margin-top: 38px;
+  margin-bottom: 10px;
+}
+
+.article-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-top-bar .bar-left {
+  display: flex;
+  color: var(--lightgreen);
+  align-items: center;
+}
+
+.bar-left > * {
+  margin: 0px 3px;
+}
+
+.bar-left:hover {
+  color: var(--darkgreen);
+}
+
+.author-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-info-container .bar-left {
+  display: flex;
+  flex-direction: column;
 }
