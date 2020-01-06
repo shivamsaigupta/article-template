@@ -13,7 +13,7 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <ul class="hd-1">
         <div class="logo-image-container">
           <img src="./images/logo.png" alt="" />
@@ -126,7 +126,7 @@
             vitae possimus repellat ullam asperiores totam iure nemo cupiditate?
           </p>
           <div class="article-img">
-            <img src="https://source.unsplash.com/random/680x500" alt="" />
+            <img src="https://source.unsplash.com/random/680x501" alt="" />
             <h4 class="img-caption">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi.
             </h4>
@@ -163,7 +163,7 @@
             vitae possimus repellat ullam asperiores totam iure nemo cupiditate?
           </p>
           <div class="article-img">
-            <img src="https://source.unsplash.com/random/680x500" alt="" />
+            <img src="https://source.unsplash.com/random/680x502" alt="" />
             <h4 class="img-caption">
               Lorem ipsum dolor sit amet consectetur adipisicing
             </h4>
@@ -249,5 +249,18 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("header").style.top = "0";
+        } else {
+          document.getElementById("header").style.top = "-120px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
   </body>
 </html>
